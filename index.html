@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Geolocation Demo</title>
+    <meta name="description" content="Geolocation demo from Treehouse">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cleartype" content="on">
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="error">You need JavaScript enabled for this application to work!</div>
+    <p id="hud">Aquiring Location<br /><img src="images/bar.gif" alt="Progress bar"></p>
+<!--     <div id="favorites">
+      <h1>Favorite Places</h1>
+      <ul>
+        <li><span data-lat="42.348244" data-lon="-71.086623">? miles</span> Trident Café Newbury St., Boston, MA</li>
+        <li><span data-lat="40.721695" data-lon="-74.004535">? miles</span> 300 West Broadway New York, NY</li>
+        <li><span data-lat="36.162341" data-lon="-86.780898">? miles</span> 555 Church Street Nashville, TN</li>
+        <li><span data-lat="51.497562" data-lon="-0.145551">? miles</span> The Goring 15 Beeston Place, London, UK</li>
+        <li><span data-lat="51.532147" data-lon="-0.177958">? miles</span> Abbey Road Studios 3 Abbey Road, London, UK</li>
+        <li><span data-lat="48.852594" data-lon="2.347209">? miles</span> Shakespeare & Co. 37 Rue de la Bûcherie, 75005 Paris, France</li>
+      </ul>
+    </div> -->
+    <div id="favorites">
+      <header>
+        <h1>Favorite Places</h1>
+        <p>(Distance in miles)</p>
+      </header>
+      <ul>
+        <li>
+          <div class="inner-wrapper">
+            <div class="left-side">
+              <div class="address-container">
+                <h3>Trident Café</h3>
+                <p>338 Newbury Street</p>
+                <p>Boston, MA</p>
+              </div>
+            </div>
+            <div class="right-side">
+              <div class="miles-container">
+                <span data-lat="42.348244" data-lon="-71.086623"></span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="inner-wrapper">
+            <div class="left-side">
+              <div class="address-container">
+                <h3>Soho Grand Hotel</h3>
+                <p>300 West Broadway</p>
+                <p>New York, NY</p>
+              </div>
+            </div>
+            <div class="right-side">
+              <div class="miles-container">
+                <span data-lat="40.721695" data-lon="-74.004535"></span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="inner-wrapper">
+            <div class="left-side">
+              <div class="address-container">
+                <h3>The Cumberland</h3>
+                <p>555 Church Street</p>
+                <p>Nashville, TN</p>
+              </div>
+            </div>
+            <div class="right-side">
+              <div class="miles-container">
+                <span data-lat="36.162341" data-lon="-86.780898"></span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="inner-wrapper">
+            <div class="left-side">
+              <div class="address-container">
+                <h3>The Goring</h3>
+                <p>15 Beeston Place</p>
+                <p>London, UK</p>
+              </div>
+            </div>
+            <div class="right-side">
+              <div class="miles-container">
+                <span data-lat="51.497562" data-lon="-0.145551"></span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="inner-wrapper">
+            <div class="left-side">
+              <div class="address-container">
+                <h3>Abbey Road Studios</h3>
+                <p>3 Abbey Road</p>
+                <p>London, UK</p>
+              </div>
+            </div>
+            <div class="right-side">
+              <div class="miles-container">
+                <span data-lat="51.532147" data-lon="-0.177958"></span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="inner-wrapper">
+            <div class="left-side">
+              <div class="address-container">
+                <h3>Shakespeare & Co.</h3>
+                <p>37 Rue de la Bûcherie</p>
+                <p>Paris, FR</p>
+              </div>
+            </div>
+            <div class="right-side">
+              <div class="miles-container">
+                <span data-lat="48.852594" data-lon="2.347209"></span>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/distanceCalculator.js"></script>
+    <script src="js/geolocation.js"></script>
+  </body>
+</html>
